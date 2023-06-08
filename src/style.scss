@@ -189,6 +189,11 @@
             color: white;
             font-size: large;
             font-weight: bold;
+            cursor: pointer;
+
+            &:hover{
+                background-color:  rgb(219 66 12);
+            }
         }
     }
     
