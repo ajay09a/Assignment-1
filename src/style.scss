@@ -149,3 +149,63 @@
         line-height: 28px;
     }
 }
+
+#login{
+    display: flex;
+    flex-direction: column;
+    margin: 75px 0px;
+    align-items: center;
+
+    .heading{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        p{
+            font-size: xx-large;
+        }
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin: 30px 0px;
+
+        input{
+            width: 40vw;
+            height: 32px;
+            border-radius: 2px;
+            border: 1px solid #e3e3e3;
+            padding: 0px 8px;
+        }
+        
+        button{
+            background: orangered;
+            border-radius: 2px;
+            height: 32px;
+            border: none;
+            width: 42vw;
+            color: white;
+            font-size: large;
+            font-weight: bold;
+        }
+    }
+    
+    .register{
+        display: flex;
+        background: #efefef;
+        height: 32px;
+        width: 42vw;
+        align-items: center;
+        justify-content: center;
+        border-radius: 2px;
+        gap: 5px;
+        
+        a{
+            color: #347f9d;
+            font-weight: bold;
+            text-decoration-line: none;
+        }
+    }
+}
