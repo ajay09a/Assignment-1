@@ -3,10 +3,10 @@ import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div>
+    <div className='footer'>
         <div className='details-and-links'>
             <div className='address'>
-                <img src='' alt='logo' />
+                <img src='https://startupz.world/images/white-logo.png' alt='logo' />
                 <p>101 Relcon Enclave, NH-48</p>
                 <p>Surat, Gujarat</p>
                 <p>India - 394325</p>
@@ -55,7 +55,25 @@ const Footer = () => {
             </div>
         </div>
         <div className='social-link-and-rights'>
-            <div className='social-link'></div>
+            <div className='social-link'>
+                <ul>
+                    <li>
+                        <NavLink to='_blank'>
+                            <img src='https://cdn-icons-png.flaticon.com/512/733/733635.png' alt='twitter' />
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink to='_blank'>
+                            <img src='https://cdn-icons-png.flaticon.com/512/20/20673.png' alt='facebook' />
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink to='_blank'>
+                            <img src='https://cdn-icons-png.flaticon.com/512/1384/1384031.png' alt='instagram' />
+                        </NavLink>
+                    </li>
+                </ul>
+            </div>
             <div className='rights'>
                 <p>&#169;</p>
                 <NavLink to='/'>StartupzWorld,</NavLink>

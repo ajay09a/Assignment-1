@@ -1,5 +1,6 @@
 *{
     font-family: work sans,sans-serif;
+    margin: auto;
 }
 
 .navbar{
@@ -44,6 +45,88 @@
 
         &:hover{
             background: rgb(219 66 12);
+        }
+    }
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 14px;
+    background-image: url(https://startupz.world/images/other/background-thedir-cover.jpg);
+    background-size: cover;
+
+    .details-and-links{
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+        margin: 70px 0px;
+
+        ul{
+            list-style: none;
+
+            li{
+                margin-bottom: 16px;
+                margin-left: -39px;
+
+                a{
+                    text-decoration-line: none;
+                    color: black;
+        
+                    &:hover{
+                        color: orangered;
+                    }
+                }
+            }
+        }
+
+        .address{
+            flex: 1;
+            text-align: center;
+
+            img{
+                height: 120px;
+                margin-bottom: 30px;
+            }
+        }
+        .company{
+            flex: 1;
+        }
+        .quick-links{
+            flex: 1;
+        }
+        .faqs{
+            flex: 1;
+        }
+    }
+
+    .social-link-and-rights{
+        display: flex;
+        padding-top: 70px;
+
+        .social-link{
+            ul{
+                list-style: none;
+                display: flex;
+                gap: 15px;
+
+                img{
+                    height: 20px;
+                }
+            }
+        }
+
+        .rights{
+            display: flex;
+            gap: 6px;
+            align-items: center;
+            margin: auto;
+
+            a{
+                text-decoration-line: none;
+                font-weight: bold;
+                color: black;
+            }
         }
     }
 }
