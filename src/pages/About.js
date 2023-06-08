@@ -2,7 +2,7 @@ import React from 'react'
 
 const About = () => {
   return (
-    <div>
+    <div id='about'>
         <h1>About Us</h1>
         <p>Welcome to StartupZ, the premier online platform connecting startups and investors from all over the world. Our mission is to empower startups of all industries and stages to achieve their full potential by connecting them with the resources and networks they need to succeed.</p>
         <p>Our platform is designed to provide startups with a wide range of networking opportunities, including access to potential investors, strategic collaborators, mentors, incubation and acceleration programs, and corporate credits for accelerating growth. We understand the unique challenges and opportunities that startups face, and our platform is tailored to meet those needs.</p>
