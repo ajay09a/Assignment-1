@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div>
+    <div className='navbar'>
         <div className='logo'>
             <img src='https://startupz.world/images/white-logo.png' alt='logo'/>
         </div>
@@ -24,7 +24,7 @@ const Navbar = () => {
                 <NavLink to='/login'>Log in</NavLink>
             </li>
         </ul>
-        <button>Add Listing</button>
+        <button>Add Listing &gt;</button>
     </div>
   )
 }
