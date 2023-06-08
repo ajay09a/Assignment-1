@@ -23,8 +23,10 @@ const Navbar = () => {
             <li>
                 <NavLink to='/login'>Log in</NavLink>
             </li>
+            <li>
+                <button>Add Listing &gt;</button>
+            </li>
         </ul>
-        <button>Add Listing &gt;</button>
     </div>
   )
 }
