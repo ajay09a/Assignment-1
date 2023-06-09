@@ -150,6 +150,47 @@
     }
 }
 
+#investor{
+    margin: 50px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+
+    h1{
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    p{
+        line-height: 28px;
+    }
+    .check{
+        display: flex;
+        align-items: center;
+        gap: 13px;
+
+        img{
+            height: 22px;
+        }
+    }
+
+    .details{
+        display: flex;
+        gap: 75px;
+        flex-wrap: wrap;
+
+        span{
+            font-weight: bold;
+            font-size: x-large;
+        }
+
+        h4{
+            color: #777777;
+            line-height: 28px;
+        }
+    }
+}
+
 #login{
     display: flex;
     flex-direction: column;
