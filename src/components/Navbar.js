@@ -9,7 +9,7 @@ const Navbar = () => {
         </div>
         <ul>
             <li>
-                <NavLink to='/home'>Home</NavLink>
+                <NavLink to='/'>Home</NavLink>
             </li>
             <li>
                 <NavLink to='/startup'>Startup</NavLink>
@@ -24,7 +24,7 @@ const Navbar = () => {
                 <NavLink to='/login'>Log in</NavLink>
             </li>
             <li>
-                <button>Add Listing &gt;</button>
+                <NavLink to='/register'><button>Add Listing &gt;</button></NavLink>
             </li>
         </ul>
     </div>

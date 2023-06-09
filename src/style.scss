@@ -9,6 +9,7 @@
     margin: 27px 11px;
     justify-content: center;
     align-items: center;
+    text-transform: uppercase;
 
     .logo{
         margin-right: auto;
@@ -35,6 +36,7 @@
             }
         }
         button{
+            text-transform: uppercase;
             border: none;
             border-radius: 4px;
             padding: 12px 16px;
@@ -208,6 +210,21 @@
             }
         }
     }
+    .details{
+        display: flex;
+        gap: 75px;
+        flex-wrap: wrap;
+
+        span{
+            font-weight: bold;
+            font-size: x-large;
+        }
+
+        h4{
+            color: #777777;
+            line-height: 28px;
+        }
+    }
 }
 
 
@@ -314,6 +331,299 @@
             color: #347f9d;
             font-weight: bold;
             text-decoration-line: none;
+        }
+    }
+}
+
+
+
+#register{
+    display: flex;
+    flex-direction: column;
+    margin: 75px 0px;
+    align-items: center;
+
+    .heading{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        p{
+            font-size: xx-large;
+        }
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin: 30px 0px;
+
+        select{
+            width: 41vw;
+            height: 32px;
+            border-radius: 2px;
+            border: 1px solid #e3e3e3;
+            padding: 0px 8px;
+        }
+        input{
+            width: 40vw;
+            height: 32px;
+            border-radius: 2px;
+            border: 1px solid #e3e3e3;
+            padding: 0px 8px;
+        }
+        
+        button{
+            background: orangered;
+            border-radius: 2px;
+            height: 32px;
+            border: none;
+            width: 42vw;
+            color: white;
+            font-size: large;
+            font-weight: bold;
+            cursor: pointer;
+
+            &:hover{
+                background-color:  rgb(219 66 12);
+            }
+        }
+    }
+    
+    .register{
+        display: flex;
+        background: #efefef;
+        height: 32px;
+        width: 42vw;
+        align-items: center;
+        justify-content: center;
+        border-radius: 2px;
+        gap: 5px;
+        
+        a{
+            color: #347f9d;
+            font-weight: bold;
+            text-decoration-line: none;
+        }
+    }
+}
+
+
+#home{
+    .hero-section{
+        background-image: url('https://startupz.world/images/other/banner.jpg');
+        background-size: cover;
+        background-position: 50%;
+        background-repeat: no-repeat;
+        position: relative;
+        z-index: 1;
+        padding-top: 210px;
+
+        .home-main-container{
+            position: relative;
+            z-index: 3;
+
+            .container{
+                width: 100%;
+                padding-right: 15px;
+                padding-left: 77px;
+                margin-right: auto;
+                margin-left: auto;
+
+                .heading{
+                    margin-bottom: 4.375rem!important;
+
+                    .sideLeft{
+                        animation-name: sideInLeft;
+                        animation-duration: 1s;
+                        animation-fill-mode: both;
+                        font-size: 90px;
+
+                        @keyframes sideInLeft {
+                            0% {
+                                transform: translate3d(-100%,0,0);
+                                opacity: 0;
+                            }
+                            100% {
+                                opacity: 1;
+                                transform: translateZ(0);
+                            }
+                        }
+                    }
+
+                    .sideRight{
+                        animation-name: sideInRight;
+                        animation-duration: 1s;
+                        animation-fill-mode: both;
+                        font-size: 50px;
+                        font-weight: normal;
+
+                        @keyframes sideInRight {
+                            0% {
+                                transform: translate3d(100%,0,0);
+                            }
+                            100% {
+                                transform: translateZ(0);
+                            }
+                        }
+                    }
+
+                    .animate-fadeInDown{
+                        animation-name: fadeInDown;
+                        animation-duration: 1s;
+                        animation-fill-mode: both;
+                        margin-top: 32px;
+                        color: #777;
+
+                        @keyframes fadeInDown {
+                            0% {
+                                transform: translate3d(0,-100%,0);
+                            }
+                            100% {
+                                transform: translateZ(0);
+                            }
+                        }
+                    }
+                }
+
+                .form-search{
+                    position: relative;
+                    z-index: 9000;
+                    animation-name: fadeInDown;
+                    animation-duration: 1s;
+                    animation-fill-mode: both;
+
+                    @keyframes fadeInDown {
+                        0% {
+                            opacity: 0;
+                            transform: translate3d(0,-100%,0);
+                        }
+                        100% {
+                            opacity: 1;
+                            transform: translateZ(0);
+                        }
+                    }
+
+                    .align-item{
+                        align-items: flex-end!important;
+                        display: flex;
+                        flex-wrap: wrap;
+                        margin-right: 0;
+                        margin-left: 0;
+
+                        .form-search-item{
+                            border: 0!important;
+                            border-radius: 3px!important;
+
+                            .input-group{
+                                display: flex;
+                                align-items: center;
+                                padding-right: 16px;
+                                position: static;
+
+                                input{
+                                    line-height: 30px;
+                                    font-size: 16px;
+                                    min-height: 30px;
+                                    height: 30px;
+                                    position: relative;
+                                    flex: 1 1;
+                                    min-width: 0;
+                                    margin-bottom: 0;
+                                    padding: 22px;
+                                    border: none;
+                                }
+                            }
+                        }
+
+                        button{
+                            font-size: 20px;
+                            padding: 23.5px;
+                            color: #fff;
+                            background: #ff5a5f linear-gradient(180deg,#ff7377,#ff5a5f) repeat-x;
+                            border-color: #ff5a5f;
+                            box-shadow: none;
+                            cursor: pointer;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+
+    .explore-section:nth-child(odd){
+        margin-top: 20px;
+        padding: 25px 40px;
+        background-image: url(https://startupz.world/images/other/background-thedir-cover.jpg);
+        background-size: cover;
+        .heading{
+            margin-bottom: 16px;
+            .non-bold{
+                font-weight: normal;
+            }
+        }
+
+        .explore-grid-section{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px 50px;
+
+            .unique{
+                background-color: white;
+                border: 1px solid black;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 8px 16px;
+
+                a{
+                    text-decoration: none;
+                    color: black;
+                }
+                &:hover{
+                    background-color: orangered;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .explore-section:nth-child(even){
+        margin-top: 20px;
+        padding: 25px 40px;
+        .heading{
+            margin-bottom: 16px;
+            .non-bold{
+                font-weight: normal;
+            }
+        }
+
+        .explore-grid-section{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px 50px;
+
+            .unique{
+                background-color: white;
+                border: 1px solid black;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 8px 16px;
+
+                a{
+                    text-decoration: none;
+                    color: black;
+                }
+                &:hover{
+                    background-color: orangered;
+                    cursor: pointer;
+                }
+            }
         }
     }
 }
