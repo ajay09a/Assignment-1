@@ -150,6 +150,67 @@
     }
 }
 
+#startup{
+    margin: 50px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+
+    h1{
+        margin-bottom: 30px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    p{
+        line-height: 28px;
+    }
+    .animated-section{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+        animation: fadeInUp;
+        animation-duration: 1s;
+        animation-fill-mode: both;
+
+        @keyframes fadeInUp {
+            0%{
+                opacity: 0;
+                transform: translate3d(0, 100%, 0);
+            }
+            100%{
+                opacity: 1;
+                transform: translateZ(0);
+            }
+            
+        }
+
+        .unique{
+            display: flex;
+            align-items: flex-start;
+            gap: 22px;
+
+            span{
+                font-weight: bold;
+                font-size: xxx-large;
+                color: #7777;
+                margin: 15px 0px;
+            }
+            .unique-details{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                margin-top: 14px;
+
+                p{
+                    color: #777;
+                }
+            }
+        }
+    }
+}
+
+
 #investor{
     margin: 50px 50px;
     display: flex;
@@ -159,6 +220,7 @@
     h1{
         margin-bottom: 30px;
         text-align: center;
+        text-transform: uppercase;
     }
 
     p{
